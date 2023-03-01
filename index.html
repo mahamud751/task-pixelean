@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+      justify-content: end;
+      /* top: 0; */
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="d-flex p-3">
+      <div class="vertical" style="width: 13%;">
+
+        <div class="d-flex align-items-start" style="background-color: #0F141F;height: 100vh;">
+
+          <div class="nav flex-column nav-pills me-3 side_menu_main vertical" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <nav class='animated bounceInDown'>
+              <ul>
+
+                <li class='sub-menu'><a href='#settings'
+                    style="  background: radial-gradient(75.47% 75.47% at 50% 0%, #598BFC 0%, #1A55DB 100%);color: white;"><img
+                      class="side_menu_img mx-3" src="img/earth 1.png" alt="">Global<div
+                      class='fa fa-solid fa-angle-down'></div></a>
+                  <ul>
+                    <li><a href='#settings'>Account</a></li>
+                    <li><a href='#settings'>Profile</a></li>
+                    <li><a href='#settings'>Secruity &amp; Privacy</a></li>
+                    <li><a href='#settings'>Password</a></li>
+                    <li><a href='#settings'>Notification</a></li>
+                  </ul>
+                </li>
+
+                <p class="text-white ms-5 mt-3">Individual Ship</p>
+                <li class='sub-menu'><a href='#message' style=" background: #2E3A54; color: white;"> <img
+                      class="side_menu_img mx-3" src="img/Ellipse 19.png" alt="">Imam Uddin<div
+                      class='fa fa-solid fa-angle-down'></div></a>
+                  <ul>
+                    <li><a href='#settings'>FAQ's</a></li>
+                    <li><a href='#settings'>Submit a Ticket</a></li>
+                    <li><a href='#settings'>Network Status</a></li>
+                  </ul>
+                </li>
+                <li class='sub-menu'><a href='#message' style=" background: #2E3A54; color: white;"> <img
+                      class="side_menu_img mx-3" src="img/Ellipse 19.png" alt="">Imam Uddin<div
+                      class='fa fa-solid fa-angle-down'></div></a>
+                  <ul>
+                    <li><a href='#settings'>FAQ's</a></li>
+                    <li><a href='#settings'>Submit a Ticket</a></li>
+                    <li><a href='#settings'>Network Status</a></li>
+                  </ul>
+                </li>
+                <li class='sub-menu'><a href='#message' style=" background: #2E3A54; color: white;"> <img
+                      class="side_menu_img mx-3" src="img/Ellipse 19.png" alt="">Imam Uddin<div
+                      class='fa fa-solid fa-angle-down'></div></a>
+                  <ul>
+                    <li><a href='#settings'>FAQ's</a></li>
+                    <li><a href='#settings'>Submit a Ticket</a></li>
+                    <li><a href='#settings'>Network Status</a></li>
+                  </ul>
+                </li>
+                <li class='sub-menu'><a href='#message' style=" background: #2E3A54; color: white;"> <img
+                      class="side_menu_img mx-3" src="img/Ellipse 19.png" alt="">Imam Uddin<div
+                      class='fa fa-solid fa-angle-down'></div></a>
+                  <ul>
+                    <li><a href='#settings'>FAQ's</a></li>
+                    <li><a href='#settings'>Submit a Ticket</a></li>
+                    <li><a href='#settings'>Network Status</a></li>
+                  </ul>
+                </li>
+                <li class='sub-menu'><a href='#message' style=" background: #2E3A54; color: white;"> <img
+                      class="side_menu_img mx-3" src="img/Ellipse 19.png" alt="">Imam Uddin<div
+                      class='fa fa-solid fa-angle-down'></div></a>
+                  <ul>
+                    <li><a href='#settings'>FAQ's</a></li>
+                    <li><a href='#settings'>Submit a Ticket</a></li>
+                    <li><a href='#settings'>Network Status</a></li>
+                  </ul>
+                </li>
+
+
+
+              </ul>
+            </nav>
+            <!-- <button class=" side_menu_btn1 side_menu "   type="button" role="tab" ><div class="d-flex px-4"><img class="side_menu_img" src="img/earth 1.png" alt=""><a class="side_menu_a" href=""> Global</a><i class="fa-solid fa-angle-down mt-1 ms-2 "></i></div></button>
+                      <p class="text-white ms-5 mt-3">Individual Ship</p>
+                    
+                     
+                      <button class=" side_menu_btn side_menu "   type="button" ><div class="d-flex px-4"><img class="side_menu_img" src="img/Ellipse 19.png" alt=""><a class="side_menu_a" href=""> Imam Uddin</a><i class="fa-solid fa-angle-down mt-1 ms-2 "></i></div></button>
+                     
+                      <button class=" side_menu_btn side_menu"   data-bs-toggle="pill"  type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false"><div class="d-flex px-4"><img class="side_menu_img" src="img/Ellipse 19.png" alt=""><a class="side_menu_a" href=""> Imam Uddin</a><i class="fa-solid fa-angle-down mt-1 ms-2"></i></div></button>
+                      <button class=" side_menu_btn side_menu" ><div class="d-flex px-4"><img class="side_menu_img" src="img/Ellipse 19.png" alt=""><a class="side_menu_a" href=""> Niaz Hossain</a><i class="fa-solid fa-angle-down mt-1 ms-2"></i></div></button>
+                      <button class=" side_menu_btn side_menu"  ><div class="d-flex px-4"><img class="side_menu_img" src="img/Ellipse 19.png" alt=""><a class="side_menu_a" href=""> Mortaza</a><i class="fa-solid fa-angle-down mt-1 ms-2"></i></div></button>
+                      <button class=" side_menu_btn side_menu"  ><div class="d-flex px-4"><img class="side_menu_img" src="img/Ellipse 19.png" alt=""><a class="side_menu_a" href=""> F.M. Zukov</a><i class="fa-solid fa-angle-down mt-1 ms-2"></i></div></button>
+                   -->
+          </div>
+
+        </div>
+      </div>
+      <div style="width: 87%;">
+        <nav class="navbar navbar-expand-lg" style="background-color: #0F141F">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+              <ul class="nav main_nav nav-pills">
+                <li class="nav-item nav_main_bar1">
+                  <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Cargo Gear</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Breakdown</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Daily Reports</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Cargo Operation</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Bunker</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Time Loss</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Port Turn Out</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Ballast Tank</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Demarrage & Despatch</a>
+                </li>
+                <li class="nav-item nav_main_bar">
+                  <a class="nav-link" href="#">Voyage Summary</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+        <div class="p-3">
+          <h1 class="text_global mb-4">Global Ship Report</h1>
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40258.png" alt="">
+                    <h1>12</h1>
+                  </div>
+                  <p>Renewal/Abnormality</p>
+                  <h4>Cargo Gear</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40258 (1).png" alt="">
+                    <p>MON 05-02-23</h1>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h4 class="mt-4">Daily Excess Consumption</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <p>VLSFO: 10 MT
+                        LSMGO: 30 MT
+                        MDO: 12 MT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40444.png" alt="">
+                    <h1>5</h1>
+                  </div>
+
+                  <h4 class="mt-4">Daily Speed Underperformance</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40258.png" alt="">
+                    <h1>5</h1>
+                  </div>
+
+                  <h4 class="mt-4">Cargo Loading Report</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40258.png" alt="">
+                    <h1>4</h1>
+                  </div>
+
+                  <h4 class="mt-4">Cargo Discharge Report</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40258 (1).png" alt="">
+                    <p>MON 05-02-23</h1>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h4 class="mt-4">Total Voyage
+                        Excess Consumption</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <p>VLSFO: 10 MT
+                        LSMGO: 30 MT
+                        MDO: 12 MT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40444.png" alt="">
+                    <h1>11</h1>
+                  </div>
+
+                  <h4 class="mt-4">Upcoming Bunker Demands</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card first_card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <img src="img/Group 40258.png" alt="">
+                    <h1>7</h1>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <h4 class="mt-4">Crane Breakdown Loss</h4>
+                    </div>
+                    <div class="col-md-5">
+                      <p class="m-0 ">Total: 20 hrs</p>
+                      <p>15-01-2023</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="d-flex my-5">
+          <img src="img/Line 103.png" alt="" style="height: 1px; width: 46%;">
+          <h6 class="text-center" style="width: 6%;">Cargo Gear</h6>
+          <img src="img/Line 103.png" alt="" style="height: 1px; width: 46%;">
+        </div>
+        <!--last bar part-->
+        <div>
+          <div class="row px-2">
+            <div class="col-md-4">
+              <div class="card p-3">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h1>Abnormality Alerts</h1>
+                    <div class="d-flex">
+                      <p>Mv Jawad</p>
+                      <img class="img-fluid mx-3 mt-2" src="img/Vector (6).png" alt="" style="width: 6px;
+                                        height: 3.44px;">
+                      <img class="img-fluid" src="img/Frame 122.png" alt="" style="width: 24px;
+                                        height: 23px;">
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h6>Luffing wires</h6>
+                    <h6>Hoisting wires</h6>
+                    <h6>Hoisting wires</h6>
+                  </div>
+                  <div class="row mt-5">
+
+                    <div id="chart" class="legend">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h6>Breakdown History</h1>
+                      <div class="d-flex">
+                        <p>Total: 20 hrs</p>
+                        <img class="img-fluid ms-3" src="img/Frame 122.png" alt="" style="width: 24px;
+                                        height: 23px;">
+                      </div>
+                  </div>
+
+
+                  <div id="chart2" class="legend">
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="charts">
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <script>
+    $(".sub-menu ul").hide();
+    $(".sub-menu a").click(function () {
+      $(this).parent(".sub-menu").children("ul").slideToggle("100");
+      $(this).find(".right").toggleClass("fa-solid fa-angle-down");
+    });
+  </script>
+</body>
+
+</html>
